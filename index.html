@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dayanand Chakradhari | Singer & Musician</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial, sans-serif;
+  background:#090b10;
+  color:white;
+  overflow-x:hidden;
+}
+
+/* TOP HEADER */
+header{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  position:relative;
+  padding:30px 20px;
+  background:
+    radial-gradient(circle at 50% 30%,#4d3508 0%,#17120a 28%,#090b10 65%);
+}
+
+/* Music notes */
+.note{
+  position:absolute;
+  color:#d9a441;
+  font-size:35px;
+  animation:float 5s infinite ease-in-out;
+  opacity:.7;
+}
+
+.n1{left:10%;top:20%}
+.n2{right:12%;top:28%;animation-delay:1s}
+.n3{left:18%;bottom:20%;animation-delay:2s}
+.n4{right:20%;bottom:18%;animation-delay:3s}
+
+@keyframes float{
+  0%,100%{transform:translateY(0) rotate(0deg)}
+  50%{transform:translateY(-25px) rotate(12deg)}
+}
+
+/* LOGO */
+.logo{
+  position:absolute;
+  top:25px;
+  left:25px;
+  width:70px;
+  height:70px;
+  border:2px solid #d9a441;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:30px;
+  background:#111;
+  box-shadow:0 0 25px #d9a44155;
+}
+
+/* MAIN */
+.hero{
+  max-width:850px;
+  z-index:2;
+}
+
+.small-title{
+  color:#d9a441;
+  letter-spacing:5px;
+  font-size:14px;
+  margin-bottom:20px;
+}
+
+.name{
+  font-size:clamp(42px,9vw,90px);
+  font-weight:800;
+  letter-spacing:3px;
+  background:linear-gradient(90deg,#fff,#d9a441,#fff,#d9a441);
+  background-size:300%;
+  -webkit-background-clip:text;
+  color:transparent;
+  animation:shine 5s linear infinite;
+}
+
+@keyframes shine{
+  0%{background-position:0%}
+  100%{background-position:300%}
+}
+
+.subtitle{
+  margin-top:15px;
+  font-size:20px;
+  color:#ddd;
+  letter-spacing:3px;
+}
+
+.line{
+  width:100px;
+  height:3px;
+  background:#d9a441;
+  margin:25px auto;
+}
+
+.description{
+  max-width:650px;
+  margin:auto;
+  color:#bbb;
+  line-height:1.8;
+  font-size:16px;
+}
+
+/* PHOTO */
+.photo{
+  width:180px;
+  height:180px;
+  margin:30px auto;
+  border-radius:50%;
+  padding:5px;
+  background:linear-gradient(45deg,#d9a441,#fff,#d9a441);
+  box-shadow:0 0 35px #d9a44155;
+}
+
+.photo img{
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  object-fit:cover;
+  background:#222;
+}
+
+/* BUTTON */
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:14px 28px;
+  border:1px solid #d9a441;
+  border-radius:30px;
+  color:#fff;
+  text-decoration:none;
+  transition:.3s;
+}
+
+.btn:hover{
+  background:#d9a441;
+  color:#000;
+  transform:scale(1.05);
+}
+
+/* SOCIAL */
+.social{
+  margin-top:35px;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.social a{
+  text-decoration:none;
+  color:#fff;
+  border:1px solid #333;
+  padding:10px 15px;
+  border-radius:25px;
+  background:#11151c;
+  transition:.3s;
+}
+
+.social a:hover{
+  border-color:#d9a441;
+  transform:translateY(-4px);
+}
+
+/* MUSIC SECTION */
+section{
+  padding:80px 20px;
+  background:#0d1016;
+  text-align:center;
+}
+
+.section-title{
+  font-size:35px;
+  color:#d9a441;
+  margin-bottom:15px;
+}
+
+.section-text{
+  color:#aaa;
+  margin-bottom:40px;
+}
+
+.cards{
+  max-width:1000px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.card{
+  padding:30px 20px;
+  background:#151922;
+  border:1px solid #292d36;
+  border-radius:18px;
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  border-color:#d9a441;
+}
+
+.card h3{
+  color:#fff;
+  margin-bottom:10px;
+}
+
+.card p{
+  color:#999;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:30px 15px;
+  background:#07080c;
+  color:#888;
+}
+
+.signature{
+  color:#d9a441;
+  font-size:22px;
+  font-style:italic;
+  margin-bottom:10px;
+}
+
+@media(max-width:600px){
+  .logo{
+    width:55px;
+    height:55px;
+    font-size:23px;
+    left:15px;
+    top:15px;
+  }
+
+  .subtitle{
+    font-size:15px;
+  }
+
+  .description{
+    font-size:14px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">♪</div>
+
+<div class="note n1">♪</div>
+<div class="note n2">♫</div>
+<div class="note n3">♬</div>
+<div class="note n4">♪</div>
+
+<div class="hero">
+
+<div class="small-title">MUSIC • SOUL • PASSION</div>
+
+<div class="photo">
+<img src="https://i.imgur.com/placeholder.jpg"
+alt="Dayanand Chakradhari">
+</div>
+
+<h1 class="name">DAYANAND CHAKRADHARI</h1>
+
+<div class="subtitle">
+Singer • Lyricist • Composer • Music Producer
+</div>
+
+<div class="line"></div>
+
+<p class="description">
+संगीत मेरे लिए केवल आवाज़ नहीं, बल्कि दिल की भावना है।
+भक्ति, प्रेम और संगीत की दुनिया में आपका स्वागत है।
+</p>
+
+<a class="btn"
+href="https://www.youtube.com/@dayanandchakradhari8650"
+target="_blank">
+▶ मेरा YouTube चैनल
+</a>
+
+<div class="social">
+
+<a href="https://www.youtube.com/@dayanandchakradhari8650" target="_blank">
+▶ YouTube
+</a>
+
+<a href="https://www.instagram.com/dayanandchakradhari/" target="_blank">
+◎ Instagram
+</a>
+
+<a href="https://www.threads.net/@dayanandchakradhari" target="_blank">
+@ Threads
+</a>
+
+<a href="https://www.facebook.com/" target="_blank">
+f Facebook
+</a>
+
+<a href="https://www.whatsapp.com/" target="_blank">
+☏ WhatsApp
+</a>
+
+</div>
+
+</div>
+</header>
+
+
+<section>
+
+<h2 class="section-title">मेरी संगीत यात्रा</h2>
+
+<p class="section-text">
+मेरे गीत • मेरे भजन • मेरी आवाज़ • मेरा संगीत
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>🎵 भजन</h3>
+<p>महादेव, महाकाल, कृष्ण और अन्य भक्तिमय गीत।</p>
+</div>
+
+<div class="card">
+<h3>❤️ Love Songs</h3>
+<p>दिल को छू जाने वाले रोमांटिक गीत।</p>
+</div>
+
+<div class="card">
+<h3>🎙️ Singing</h3>
+<p>मेरी आवाज़ में नए और पुराने संगीत की प्रस्तुति।</p>
+</div>
+
+<div class="card">
+<h3>🎼 Composition</h3>
+<p>गीत लेखन, संगीत रचना और म्यूजिक प्रोडक्शन।</p>
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<div class="signature">
+— Dayanand Chakradhari —
+</div>
+
+<p>
+© 2026 Dayanand Chakradhari. All Rights Reserved.
+</p>
+
+</footer>
+
+</body>
+</html>
